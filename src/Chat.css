@@ -1,0 +1,78 @@
+.chat {
+  flex: 0.7;
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding-bottom: 150px;
+}
+.chat_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat_header_right > p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat_header_right > p > .MuiSvgIcon-root {
+  margin-left: 5px !important;
+  font-size: 16px;
+}
+
+.channel_name {
+  display: flex;
+  text-transform: lowercase;
+}
+
+.channel_name > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.message > img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.message_info {
+  padding-left: 30px;
+}
+.message_time {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.chat_input {
+  border-radius: 20px;
+}
+
+.chat_input > form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.chat_input > fomr > input {
+  position: fixed;
+  bottom: 30px;
+  width: 60%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.chat_input > form > button {
+  display: none !important;
+}
